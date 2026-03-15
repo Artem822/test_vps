@@ -19,21 +19,8 @@ jobs:
           passphrase: ${{ secrets.SERVER_SSH_PASSPHRASE }}
           script: |
             set -e
-
-            echo "Go to project directory"
-            cd /home/deploy/projects/test_vps
-
-            echo "Current path:"
-            pwd
-
-            echo "Update code from GitHub"
+            cd /root/projects/test_vps
             git fetch origin
             git reset --hard origin/main
-
-            echo "Stop old containers"
             docker compose down
-
-            echo "Build and start new containers"
             docker compose up -d --build
-
-            echo "Deploy finished"
