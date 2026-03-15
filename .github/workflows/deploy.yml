@@ -5,7 +5,6 @@
 
 ## `.github/workflows/deploy.yml`
 
-```yaml
 name: Deploy to VPS
 
 on:
