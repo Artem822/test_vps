@@ -22,5 +22,5 @@ jobs:
             cd /root/project/test_vps
             git fetch origin
             git reset --hard origin/main
-            docker compose down
-            docker compose up -d --build
+            docker-compose down
+            docker-compose up -d --build
