@@ -19,7 +19,7 @@ jobs:
           passphrase: ${{ secrets.SERVER_SSH_PASSPHRASE }}
           script: |
             set -e
-            cd /home/deploy/test_vps
+            cd /project/test_vps
             git pull origin main
             docker compose down
             docker compose up -d --build
