@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <main style={{ fontFamily: "Arial, sans-serif", padding: 40, maxWidth: 900, margin: "0 auto" }}>
-      <h1>Hosting Tester</h1>
+      <h1>Hosting Testers</h1>
       <p>Frontend: Next.js</p>
       <p>Backend: Go</p>
       <p>Requests go through Next.js proxy: <code>/api/*</code></p>
