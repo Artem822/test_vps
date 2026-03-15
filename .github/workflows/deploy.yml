@@ -19,7 +19,7 @@ jobs:
           passphrase: ${{ secrets.SERVER_SSH_PASSPHRASE }}
           script: |
             set -e
-            cd /root/projects/test_vps
+            cd /root/project/test_vps
             git fetch origin
             git reset --hard origin/main
             docker compose down
